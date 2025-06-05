@@ -47,3 +47,9 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
+
+"dependencies": {
+  "body-parser": "^1.20.0",
+  "express": "^4.18.2",
+  "cors": "^2.8.5"
+}
