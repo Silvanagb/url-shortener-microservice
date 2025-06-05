@@ -1,6 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const dns = require('dns');
+const cors = require('cors');
+
 const app = express();
 
 let urlDatabase = {};
@@ -46,7 +48,5 @@ app.get('/api/shorturl/:short_url', (req, res) => {
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log(`Listening on port ${port}`);
+  console.log(Listening on port ${port});
 });
-
-const cors=require('cors');
