@@ -48,5 +48,5 @@ app.get('/api/shorturl/:short_url', (req, res) => {
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log(Listening on port ${port});
+  console.log(`listening on port ${port}`);
 });
